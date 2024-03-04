@@ -1,0 +1,14 @@
+// custom css variables
+$primary: #c29938;
+$light: #fbf5e5;
+
+// custom css
+section {
+  padding: 5rem 0;
+}
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+$bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
