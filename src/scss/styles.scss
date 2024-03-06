@@ -3,8 +3,18 @@ $primary: #c29938;
 $light: #fbf5e5;
 
 // custom css
+body {
+  background: url(/src/img/cloudy.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
 section {
   padding: 5rem 0;
+}
+
+#search-btn:hover {
+  background-color: rgb(90, 90, 90);
 }
 
 // Import all of Bootstrap's CSS
