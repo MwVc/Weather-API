@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather API</title>
+    <title>Weather App</title>
   <script defer src="bundle.js"></script></head>
   <body class="d-flex flex-column vh-100">
     <nav class="navbar navbar-expand-md shadow bg-secondary opacity-75">
@@ -31,7 +31,7 @@
         >
           <form class="d-flex m-4" role="search">
             <input
-              id="search-box"
+              id="search-input"
               class="form-control me-2"
               type="search"
               placeholder="Search"
@@ -67,21 +67,42 @@
     <section>
       <div class="container d-flex flex-column justify-content-center">
         <div class="card mb-3 text-center opacity-75">
-          <div class="card-header bg-secondary text-white">
+          <div class="card-header bg-secondary text-white" id="locationData">
             London, United Kingdom
           </div>
           <div class="card-body">
             <h5 class="card-title">Weather Information</h5>
-            <p class="card-text">Local Time: 2024-03-06 7:30</p>
+            <p class="card-text">
+              Local Time: <span id="localTimeData"></span>2024-03-06 7:30
+            </p>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cloud: 0</li>
-              <li class="list-group-item">Feels Like: 3.6°C / 38.5°F</li>
-              <li class="list-group-item">Humidity: 100%</li>
-              <li class="list-group-item">Pressure: 30.12 in / 1020 mb</li>
-              <li class="list-group-item">Temperature: 4°C / 39.2°F</li>
-              <li class="list-group-item">Visibility: 0.3 km / 0 miles</li>
-              <li class="list-group-item">Wind Direction: NE</li>
-              <li class="list-group-item">Wind Speed: 3.6 kph / 2.2 mph</li>
+              <li class="list-group-item">
+                Condition: <span id="conditionData"></span>Partly Cloudy
+              </li>
+
+              <li class="list-group-item" id="humidity">
+                Humidity: <span id="humidityData"></span>100%
+              </li>
+              <li class="list-group-item" id="pressure">
+                Atmospheric Pressure: <span id="pressureData"></span>30.12 in /
+                1020 mb
+              </li>
+              <li class="list-group-item" id="temperature">
+                Temperature: <span id="temperatureData"></span>4°C / 39.2°F
+              </li>
+              <li class="list-group-item" id="feels-like">
+                Temperature Feels Like: <span id="feelsLikeData"></span>3.6°C /
+                38.5°F
+              </li>
+              <li class="list-group-item" id="visibility">
+                Visibility: <span id="visibilityData"></span>0.3 km / 0 miles
+              </li>
+              <li class="list-group-item" id="wind-direction">
+                Wind Direction: <span id="windDirectionData"></span>NE
+              </li>
+              <li class="list-group-item" id="wind-speed">
+                Wind Speed: <span id="windSpeedData"></span>3.6 kph / 2.2 mph
+              </li>
             </ul>
           </div>
         </div>
