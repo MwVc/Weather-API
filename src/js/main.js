@@ -18,4 +18,14 @@ async function getWeatherData() {
   console.log(data);
 }
 
-getWeatherData();
+// getWeatherData();
+
+// Real time function
+function refreshTime() {
+  const timeDisplay = document.getElementById("real-time");
+  let dateString = new Date();
+  console.log(dateString);
+}
+
+refreshTime();
+console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
