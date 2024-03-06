@@ -17,3 +17,5 @@ async function getWeatherData() {
   const data = await promise.json();
   console.log(data);
 }
+
+// document.body.style.backgroundImage = "url(/src/img/cloudy-sunny.jpg)";
