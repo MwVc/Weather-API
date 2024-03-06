@@ -6,13 +6,13 @@
     <title>Weather API</title>
   </head>
   <body class="d-flex flex-column vh-100">
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light shadow bg-transparent">
       <div class="container-xl">
         <a href="#intro" class="navbar-brand">
           <span class="fw-bold text-secondary">
             <i class="bi bi-brightness-alt-high"></i>
-            Weather Forecast</span
-          >
+            Weather Forecast
+          </span>
         </a>
         <button
           class="navbar-toggler"
@@ -44,25 +44,24 @@
       </div>
     </nav>
     <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="card text-center col-md-4 mt-3 col-sm-10 p-0">
-            <div class="card-header p-0">
-              <img
-                src="https://i.pinimg.com/originals/fc/68/f8/fc68f86873c9c661e84ad442cf8fb6cf.gif"
-                alt=""
-                class="w-100"
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-            </div>
-            <div id="real-time" class="card-footer text-muted">2 days ago</div>
+      <div class="container d-flex flex-column justify-content-center">
+        <div class="card border-primary mb-3 text-center">
+          <div class="card-header bg-primary text-white">
+            London, United Kingdom
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Weather Information</h5>
+            <p class="card-text">Local Time: 2024-03-06 7:30</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cloud: 0</li>
+              <li class="list-group-item">Feels Like: 3.6°C / 38.5°F</li>
+              <li class="list-group-item">Humidity: 100%</li>
+              <li class="list-group-item">Pressure: 30.12 in / 1020 mb</li>
+              <li class="list-group-item">Temperature: 4°C / 39.2°F</li>
+              <li class="list-group-item">Visibility: 0.3 km / 0 miles</li>
+              <li class="list-group-item">Wind Direction: NE</li>
+              <li class="list-group-item">Wind Speed: 3.6 kph / 2.2 mph</li>
+            </ul>
           </div>
         </div>
       </div>

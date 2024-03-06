@@ -17,15 +17,3 @@ async function getWeatherData() {
   const data = await promise.json();
   console.log(data);
 }
-
-// getWeatherData();
-
-// Real time function
-function refreshTime() {
-  const timeDisplay = document.getElementById("real-time");
-  let dateString = new Date();
-  console.log(dateString);
-}
-
-refreshTime();
-console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
