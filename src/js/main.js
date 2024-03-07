@@ -5,30 +5,29 @@ import "../scss/styles.scss";
 import * as bootstrap from "bootstrap";
 
 (function () {
+  getWeatherData("Yakutsk");
   const form = document.querySelector("form");
   const searchInput = document.querySelector("#search-input");
-  const button = document.getElementById("search-btn");
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!(searchInput.value == "")) {
-      getWeatherData;
-    } else {
-      button.setAttribute("data-bs-toggle", "modal");
-      button.setAttribute("data-bs-target", "#exampleModal");
+      getWeatherData(searchInput.value);
     }
   });
 })();
 
-async function getWeatherData() {
+async function getWeatherData(location) {
   try {
     const promise = await fetch(
-      "https://api.weatherapi.com/v1/current.json?key=1a5ff743f48f43298ad132819242302&q=oidfodsd"
+      `https://api.weatherapi.com/v1/current.json?key=1a5ff743f48f43298ad132819242302&q=${encodeURIComponent(
+        location
+      )}`
     );
-    console.log(promise);
+    // console.log(promise);
     if (promise.ok) {
       const weatherData = await promise.json();
-      console.log(weatherData);
+      // console.log(weatherData);
 
       document.getElementById(
         "locationData"
