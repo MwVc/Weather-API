@@ -67,47 +67,82 @@
     <section>
       <div class="container d-flex flex-column justify-content-center">
         <div class="card mb-3 text-center opacity-75">
-          <div class="card-header bg-secondary text-white" id="locationData">
-            London, United Kingdom
-          </div>
+          <div
+            class="card-header bg-secondary text-white"
+            id="locationData"
+          ></div>
           <div class="card-body">
             <h5 class="card-title">Weather Information</h5>
             <p class="card-text">
-              Local Time: <span id="localTimeData"></span>2024-03-06 7:30
+              Local Time: <span id="localTimeData"></span>
             </p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                Condition: <span id="conditionData"></span>Partly Cloudy
+                <span id="conditionData"></span
+                ><span
+                  ><img src="#" alt="" class="img-fluid" id="conditionDataIcon"
+                /></span>
               </li>
 
               <li class="list-group-item" id="humidity">
-                Humidity: <span id="humidityData"></span>100%
+                Humidity: <span id="humidityData"></span>
               </li>
               <li class="list-group-item" id="pressure">
-                Atmospheric Pressure: <span id="pressureData"></span>30.12 in /
-                1020 mb
+                Atmospheric Pressure: <span id="pressureData"></span>
               </li>
               <li class="list-group-item" id="temperature">
-                Temperature: <span id="temperatureData"></span>4°C / 39.2°F
+                Temperature: <span id="temperatureData"></span>
               </li>
               <li class="list-group-item" id="feels-like">
-                Temperature Feels Like: <span id="feelsLikeData"></span>3.6°C /
-                38.5°F
+                Temperature Feels Like: <span id="feelsLikeData"></span>
               </li>
               <li class="list-group-item" id="visibility">
-                Visibility: <span id="visibilityData"></span>0.3 km / 0 miles
+                Visibility: <span id="visibilityData"></span>
               </li>
               <li class="list-group-item" id="wind-direction">
-                Wind Direction: <span id="windDirectionData"></span>NE
+                Wind Direction: <span id="windDirectionData"></span>
               </li>
               <li class="list-group-item" id="wind-speed">
-                Wind Speed: <span id="windSpeedData"></span>3.6 kph / 2.2 mph
+                Wind Speed: <span id="windSpeedData"></span>
               </li>
             </ul>
           </div>
         </div>
+        <div class="container d-flex flex-column justify-content-center"></div>
       </div>
     </section>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="py-3 bg-secondary opacity-75 mt-auto shadow-lg">
       <ul
